@@ -17,11 +17,15 @@ export default {
 <template>
   <TheHeader />
 
+  <main class="bg-black">
+    <div class="container">
+      <div class="pt-5 pb-5 text-white">
+        --CONTENT GOES HERE--
+      </div>
+    </div>
+  </main>
+
   <TheFooter></TheFooter>
 </template>
 
-<style lang="scss">
-
-
-
-</style>
+<style lang="scss"></style>
