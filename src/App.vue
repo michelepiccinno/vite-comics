@@ -22,7 +22,8 @@ export default {
 <template>
   <TheHeader />
 
-<TheMain>
+
+  <TheMain :card-list="CardList">
   <div class="col" 
         v-for="(SingleCard, i) in 
         ComiCards" :key="`product_${i}`"
