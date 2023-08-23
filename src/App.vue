@@ -23,12 +23,8 @@ export default {
   <TheHeader />
 
 
-  <TheMain :card-list="CardList">
-  <div class="col" 
-        v-for="(SingleCard, i) in 
-        ComiCards" :key="`product_${i}`"
-  >
-  </div>
+  <TheMain :card-list="ComiCards">
+
 </TheMain>
 
   <TheFooter></TheFooter>

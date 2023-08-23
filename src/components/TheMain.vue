@@ -27,18 +27,17 @@ export default {
 
         --CONTENT GOES HERE--
 
-        <Slide
-        v-for="(Card, i) in CardList"
+        <div
+        v-for="(Card, i) in cardList"
         :key="i"
         :img-src="Card.bgSrc"
         :testo="Card.thumb"
-      ></Slide>
+      ></div>
 
 
       </div>
     </div>
   </main>
-
 </template>
 
 <style lang="scss" scoped>
