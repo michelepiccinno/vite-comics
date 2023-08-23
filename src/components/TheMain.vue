@@ -15,22 +15,16 @@ export default {
 </script>
 
 <template>
-
-<main class="bg-black">
-      <div class="jumbotron-container">
-      </div>
+  <main class="bg-black">
+    <div class="jumbotron-container">
+    </div>
     <div class="container">
-      <div class="pt-5 pb-5 text-white">
+      <div class="d-flex row row-cols-6 g-2 pt-5 pb-5 text-white">
 
-        --CONTENT GOES HERE--
-
-        <div
-        v-for="(Card, i) in cardList"
-        :key="i"
-        
-        :testo="Card.thumb"
-      ></div>
-
+        <div class="books-container" v-for="(Card, i) in cardList" :key="i">
+          <img class="img-books" :src="Card.thumb" alt="">
+          <p class="text-white">{{ Card.series }}</p>
+        </div>
 
       </div>
     </div>
@@ -38,5 +32,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
+.books-container {
+  height: 300px;
+  .img-books {
+    width: 100%;
+  }
+}
 </style>
