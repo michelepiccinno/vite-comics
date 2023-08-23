@@ -1,8 +1,5 @@
 <script>
 export default {
-  components: {
-    Card,
-  },
   props: {
     cardList: {
       type: Array,
@@ -30,7 +27,7 @@ export default {
         <div
         v-for="(Card, i) in cardList"
         :key="i"
-        :img-src="Card.bgSrc"
+        
         :testo="Card.thumb"
       ></div>
 
