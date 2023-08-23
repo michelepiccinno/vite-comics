@@ -1,5 +1,20 @@
 <script>
-export default {}
+export default {
+  components: {
+    Card,
+  },
+  props: {
+    CardList: {
+      type: Array,
+      required: true,
+    },
+  },
+  data() {
+    return {
+      currentCard: 0,
+    };
+  }
+}
 </script>
 
 <template>
@@ -12,6 +27,12 @@ export default {}
 
         --CONTENT GOES HERE--
 
+        <Slide
+        v-for="(Card, i) in CardList"
+        :key="i"
+        :img-src="Card.bgSrc"
+        :testo="Card.thumb"
+      ></Slide>
 
 
       </div>
