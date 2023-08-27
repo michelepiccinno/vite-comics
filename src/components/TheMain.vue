@@ -33,9 +33,12 @@ export default {
 
 <style lang="scss" scoped>
 .books-container {
-  height: 300px;
+  height: 380px;
   .img-books {
     width: 100%;
+  }
+  p {
+    margin-top: revert;
   }
 }
 </style>
